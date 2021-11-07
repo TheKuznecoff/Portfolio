@@ -1,0 +1,56 @@
+.user{
+	display: flex;
+}
+.user__avatar{
+	width: 57px;
+	height: 57px;
+	background: url("../img/ava.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.user__name{
+	color: #2b2a2c;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 5px;
+}
+.user__prof{
+	color: #6a696b;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+	
+}
+@media (max-width: 992px) {
+	.user {
+		&__avatar {
+			width: 40px;
+			height: 40px;
+			margin: 0;
+		}
+		&__name {
+			font-size: 12px;
+		}
+		&__prof {
+			font-size: 7px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.user {
+		&__content {
+			display: none;
+		}
+				&__avatar {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.form {
+	&__group {
+		margin-bottom: 25px;
+	}
+	&__label {
+		display: inline-block;
+		margin-bottom: 9px;
+		font-size: 12px;
+		color: black;
+		font-weight: 700;
+	}
+	&__input,
+	&__textarea {
+		display: block;
+		width: 100%;
+		border: 1px solid rgba(#707070, 30%);
+		padding: 15px 20px;
+		font-family: inherit;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.2;
+		&:focus {
+			outline: none;
+			border-color: rgb(86, 121, 197);
+		}
+	}
+	&__textarea {
+		height: 200px;
+		resize: none;
+	}
+}

@@ -1,0 +1,40 @@
+.progress-bar {
+	margin-bottom: 35px;
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 250px;
+		margin-bottom: 2px;
+	}
+
+	&__title {
+		font-size: 14px;
+		font-weight: 300;
+	}
+
+	&__right {
+		padding-left: 17px;
+	}
+
+	&__bar {
+		width: 139px;
+		height: 6px;
+
+		background-color: #EFEFEF;
+	}
+
+	&__progress {
+		height: 100%;
+
+		background-color: gray;
+
+		transition: width .2s linear;
+	}
+}
+
+@media (max-width: 767px) {
+	.progress-bar {
+		margin-bottom: 20px;
+	}
+}
