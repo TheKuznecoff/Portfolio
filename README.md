@@ -1,1 +1,1 @@
-# https://thekuznecoff.github.io/Portfolio/
+# https://thekuznecoff.github.io/portfolio/
