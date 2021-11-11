@@ -16,9 +16,11 @@
 @import "contact.scss";
 @import "form.scss";
 @import "burger.scss";
+@import "darkmode.scss";
 
 body {
 	font-family: "Montserrat", sans-serif;
+   line-height: 1.5;
 	&.no-scroll {
 		overflow: hidden;
 	}

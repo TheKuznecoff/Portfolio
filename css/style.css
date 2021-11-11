@@ -1354,8 +1354,318 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+:root {
+  --color-primary: #f1f1f1;
+  --color-primary-light: #152640;
+  --color-secondary: #eec413;
+}
+
+:root.theme--night {
+  --color-primary: #0a192f;
+  --color-primary-light: #152640;
+  --color-secondary: #e684af;
+}
+
+body {
+  background: var(--color-primary);
+}
+
+.theme-toggle {
+  height: 37px;
+  width: 37px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.theme-toggle .sun {
+  background: var(--color-secondary);
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 4px solid #13ebc9;
+}
+
+.theme-toggle .sun__ray {
+  width: 2px;
+  background: var(--color-secondary);
+  display: block;
+  height: 121%;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: 0.4s all, height 0.3s ease-in-out;
+  transition: 0.4s all, height 0.3s ease-in-out;
+}
+
+.theme-toggle .sun__ray:nth-child(1) {
+  -webkit-transform: rotate(calc(1 * calc(360deg / 12)));
+          transform: rotate(calc(1 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(2) {
+  -webkit-transform: rotate(calc(2 * calc(360deg / 12)));
+          transform: rotate(calc(2 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(3) {
+  -webkit-transform: rotate(calc(3 * calc(360deg / 12)));
+          transform: rotate(calc(3 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(4) {
+  -webkit-transform: rotate(calc(4 * calc(360deg / 12)));
+          transform: rotate(calc(4 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(5) {
+  -webkit-transform: rotate(calc(5 * calc(360deg / 12)));
+          transform: rotate(calc(5 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(6) {
+  -webkit-transform: rotate(calc(6 * calc(360deg / 12)));
+          transform: rotate(calc(6 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(7) {
+  -webkit-transform: rotate(calc(7 * calc(360deg / 12)));
+          transform: rotate(calc(7 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(8) {
+  -webkit-transform: rotate(calc(8 * calc(360deg / 12)));
+          transform: rotate(calc(8 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(9) {
+  -webkit-transform: rotate(calc(9 * calc(360deg / 12)));
+          transform: rotate(calc(9 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(10) {
+  -webkit-transform: rotate(calc(10 * calc(360deg / 12)));
+          transform: rotate(calc(10 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(11) {
+  -webkit-transform: rotate(calc(11 * calc(360deg / 12)));
+          transform: rotate(calc(11 * calc(360deg / 12)));
+}
+
+.theme-toggle .sun__ray:nth-child(12) {
+  -webkit-transform: rotate(calc(12 * calc(360deg / 12)));
+          transform: rotate(calc(12 * calc(360deg / 12)));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(1) {
+  -webkit-transform: rotate(calc(calc(1 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(1 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(2) {
+  -webkit-transform: rotate(calc(calc(2 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(2 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(3) {
+  -webkit-transform: rotate(calc(calc(3 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(3 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(4) {
+  -webkit-transform: rotate(calc(calc(4 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(4 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(5) {
+  -webkit-transform: rotate(calc(calc(5 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(5 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(6) {
+  -webkit-transform: rotate(calc(calc(6 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(6 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(7) {
+  -webkit-transform: rotate(calc(calc(7 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(7 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(8) {
+  -webkit-transform: rotate(calc(calc(8 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(8 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(9) {
+  -webkit-transform: rotate(calc(calc(9 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(9 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(10) {
+  -webkit-transform: rotate(calc(calc(10 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(10 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(11) {
+  -webkit-transform: rotate(calc(calc(11 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(11 * calc(360deg / 12)) - 20deg));
+}
+
+.theme-toggle:hover .sun__ray:nth-child(12) {
+  -webkit-transform: rotate(calc(calc(12 * calc(360deg / 12)) - 20deg));
+          transform: rotate(calc(calc(12 * calc(360deg / 12)) - 20deg));
+}
+
+.moon {
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  background: #13ebc9;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  -webkit-transform: scale(0) translate(25%, -25%);
+          transform: scale(0) translate(25%, -25%);
+  z-index: 9;
+  -webkit-transition: 0.4s -webkit-transform;
+  transition: 0.4s -webkit-transform;
+  transition: 0.4s transform;
+  transition: 0.4s transform, 0.4s -webkit-transform;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.theme--night .intro__title,
+.theme--night .works__title,
+.theme--night .portfolio__cat,
+.theme--night .portfolio__title,
+.theme--night .portfolio__date,
+.theme--night .about__title,
+.theme--night .about__text,
+.theme--night .about__skills,
+.theme--night .about__skills-desc,
+.theme--night .progress-bar__title,
+.theme--night .timeline__title,
+.theme--night .timeline__text {
+  color: #ffffff;
+}
+
+.theme--night .theme-toggle {
+  background-color: #13ebc9;
+}
+
+.theme--night .theme-toggle:hover .moon {
+  -webkit-transform: scale(1) translate(-3%, -18%);
+          transform: scale(1) translate(-3%, -18%);
+}
+
+.theme--night .moon {
+  -webkit-transform: scale(1) translate(11%, -11%);
+          transform: scale(1) translate(11%, -11%);
+}
+
+.theme--night .theme-toggle .sun__ray {
+  height: 0;
+  -webkit-transition: 0.4s, height 0.2s 0.1s, -webkit-transform 0.4s;
+  transition: 0.4s, height 0.2s 0.1s, -webkit-transform 0.4s;
+  transition: 0.4s, transform 0.4s, height 0.2s 0.1s;
+  transition: 0.4s, transform 0.4s, height 0.2s 0.1s, -webkit-transform 0.4s;
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(1) {
+  -webkit-transform: rotate(calc(calc(1 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(1 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(2) {
+  -webkit-transform: rotate(calc(calc(2 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(2 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(3) {
+  -webkit-transform: rotate(calc(calc(3 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(3 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(4) {
+  -webkit-transform: rotate(calc(calc(4 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(4 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(5) {
+  -webkit-transform: rotate(calc(calc(5 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(5 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(6) {
+  -webkit-transform: rotate(calc(calc(6 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(6 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(7) {
+  -webkit-transform: rotate(calc(calc(7 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(7 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(8) {
+  -webkit-transform: rotate(calc(calc(8 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(8 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(9) {
+  -webkit-transform: rotate(calc(calc(9 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(9 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(10) {
+  -webkit-transform: rotate(calc(calc(10 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(10 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(11) {
+  -webkit-transform: rotate(calc(calc(11 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(11 * calc(360deg / 12)) - 45deg));
+}
+
+.theme--night .theme-toggle .sun__ray:nth-child(12) {
+  -webkit-transform: rotate(calc(calc(12 * calc(360deg / 12)) - 45deg));
+          transform: rotate(calc(calc(12 * calc(360deg / 12)) - 45deg));
+}
+
+@media (max-width: 1200px) {
+  .theme-toggle {
+    right: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .theme-toggle {
+    right: 72%;
+  }
+}
+
+@media (max-width: 767px) {
+  .theme-toggle {
+    right: 15%;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
 
 body.no-scroll {
