@@ -1663,6 +1663,12 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .theme-toggle {
+    right: 50%;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;

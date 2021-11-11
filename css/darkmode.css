@@ -289,20 +289,26 @@ body {
           transform: rotate(calc(calc(12 * calc(360deg / 12)) - 45deg));
 }
 
-/*
- @media (max-width: 1200px) {
-	.theme-toggle {
-      right: 60%;
-   }
+@media (max-width: 1200px) {
+  .theme-toggle {
+    right: 60%;
+  }
 }
+
 @media (max-width: 992px) {
-   .theme-toggle {
-      right: 72%;
-   }
+  .theme-toggle {
+    right: 72%;
+  }
 }
+
 @media (max-width: 767px) {
-   .theme-toggle {
-      right: 15%;
-   }
+  .theme-toggle {
+    right: 15%;
+  }
 }
-*/
+
+@media (max-width: 500px) {
+  .theme-toggle {
+    right: 50%;
+  }
+}
