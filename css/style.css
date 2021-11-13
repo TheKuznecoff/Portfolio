@@ -229,6 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .user__avatar {
@@ -1374,8 +1375,8 @@ body {
   height: 37px;
   width: 37px;
   position: absolute;
-  top: 50%;
-  right: 50%;
+  top: 30%;
+  right: 10%;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1645,27 +1646,33 @@ body {
           transform: rotate(calc(calc(12 * calc(360deg / 12)) - 45deg));
 }
 
-@media (max-width: 1200px) {
-  .theme-toggle {
-    right: 60%;
-  }
-}
-
 @media (max-width: 992px) {
   .theme-toggle {
-    right: 72%;
+    width: 25px;
+    height: 25px;
+    right: -15%;
+  }
+  .theme-toggle .sun {
+    border: 2px solid #13ebc9;
+    width: 25px;
+    height: 25px;
+  }
+  .moon {
+    width: 20px;
+    height: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .theme-toggle {
-    right: 15%;
+    right: -75%;
+    top: 50%;
   }
 }
 
 @media (max-width: 500px) {
   .theme-toggle {
-    right: 50%;
+    right: -55%;
   }
 }
 
