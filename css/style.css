@@ -6,24 +6,32 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -32,9 +40,12 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -51,7 +62,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -67,7 +79,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -1551,48 +1568,34 @@ body {
   padding: 0;
   bottom: 75px;
   right: 20px;
-  width: 64px;
-  height: 64px;
+  width: 54px;
+  height: 54px;
   font-size: 36px;
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
-  border: 5px solid;
+  border: 3px solid black;
   border-radius: 50%;
   display: none;
   cursor: pointer;
+  background: url(../img/up-arrow.png) center no-repeat;
+  background-size: 50%;
+  -webkit-transition: border 0.2s linear, color 0.2s;
+  transition: border 0.2s linear, color 0.2s;
 }
-
-.light-theme .up-button {
-  color: #6653d9;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-color: #6653d9;
-  outline-color: #b6aaff;
-}
-
-.light-theme .up-button:hover {
-  color: #473c8d;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-color: #473c8d;
-}
-
-.dark-theme .up-button {
-  color: #9484f2;
-  background-color: rgba(10, 9, 16, 0.6);
-  border-color: #9484f2;
-  outline-color: #6653d9;
-}
-
-.dark-theme .up-button:hover {
-  color: #6653d9;
-  background-color: rgba(10, 9, 16, 0.6);
-  border-color: #6653d9;
+.up-button:hover {
+  border: 3px solid gold;
 }
 
 .shown {
   display: inline-block;
 }
 
+@media (max-width: 1200px) {
+  .up-button {
+    display: none;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
